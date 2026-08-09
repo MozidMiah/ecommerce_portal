@@ -25,15 +25,49 @@
             <div>
                 <form class="d-flex" role="search">
                     <div class="input-group">
-                        <input class="form-control form-control-sm" type="search" placeholder="Search" aria-label="Search" />
-                        <button class="btn btn-light text-secondary btn-sm" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <input class="form-control form-control-sm" style="width: 350px;" type="search"
+                            placeholder="Search" aria-label="Search" />
+                        <button class="btn btn-light text-secondary btn-sm" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
                 </form>
             </div>
             <div>
                 <a href="#" class="text-decoration-none text-light">Become a Seller</a>
-                <a href="#" class="btn theme-green-btn btn-sm text-light"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="#" class="btn theme-orange-btn btn-sm text-light"><i class="fa-solid fa-user-lock"></i></a>
+                <a href="#" class="btn theme-green-btn btn-sm text-light"><i
+                        class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" class="btn theme-orange-btn btn-sm text-light"><i
+                        class="fa-solid fa-user-lock"></i></a>
+            </div>
+        </div>
+    </nav>
+
+    {{-- Category Navbar --}}
+
+    <nav class="navbar navbar-expand-lg theme-navbar-light">
+        <div class="container-fluid">
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#">Mobile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#">Fashion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#">Electronics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#">Furniture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#">Grocery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" href="#">Appliances</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>

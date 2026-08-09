@@ -1,17 +1,22 @@
 .theme-navbar{
-    background-color: #4b7d9e;
+    background-color: #5490b8;
+}
+.theme-navbar-light{
+    background-color: #b6d7f3;
 }
 .theme-orange-btn{
     background-color: #cc8251;
 }
 .theme-orange-btn:hover{
-    background-color: #3e413e;
+    background-color: #4f504f;
 
 }
 .theme-green-btn{
     background-color: #28a745;
 }
 .theme-green-btn:hover{
-    background-color: #3e413e;
-
+    background-color: #4f504f;
+}
+.theme-product img:hover{
+    transform: scale(1.1);
 }
