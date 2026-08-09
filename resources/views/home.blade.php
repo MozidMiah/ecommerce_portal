@@ -11,13 +11,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css"
         integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg theme-navbar">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand text-light" href="#">
                 e-Commerce
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
@@ -27,13 +27,13 @@
             <div>
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <button class="btn btn-success" type="submit">Search</button>
                 </form>
             </div>
-            <div class="mx-5">
-                <a href="#" class="text-decoration-none">Become a Seller</a>
-                <a href="#" class="btn btn-outline-success btn-sm"><i class="fa-solid fa-cart-shopping"></i></a>
-                <a href="#" class="btn btn-primary btn-sm"><i class="fa-solid fa-user-lock"></i></a>
+            <div class="mx-3">
+                <a href="#" class="text-decoration-none text-light">Become a Seller</a>
+                <a href="#" class="btn theme-green-btn btn-sm text-light"><i class="fa-solid fa-cart-shopping"></i></a>
+                <a href="#" class="btn theme-orange-btn btn-sm text-light"><i class="fa-solid fa-user-lock"></i></a>
             </div>
         </div>
     </nav>
