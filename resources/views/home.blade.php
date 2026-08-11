@@ -1,4 +1,7 @@
 @extends('layouts.partials.main')
+@push('title')
+<title>Home Page</title>
+@endpush
 @section('content')
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -50,8 +53,7 @@
                             <img src="{{ asset('assets/images/products/1.jpg') }}" class="card-img-top" alt="Product 1">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark">Case
-                                    shoe</a></h5>
+                            <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark">Case shoe</a></h5>
                             <p class="card-text text-center">$49.99</p>
                             <div class="d-grid gap-2">
                                 <a href="#" class="btn theme-green-btn btn-sm text-light">Add to Cart</a>
@@ -126,7 +128,8 @@
                             <img src="{{ asset('assets/images/products/2.jpg') }}" class="card-img-top" alt="Product 1">
                         </a>
                         <div class="card-body">
-                            <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark">Men's Watch</a></h5>
+                            <h5 class="card-title text-center"><a href="#"
+                                    class="text-decoration-none text-dark">Men's Watch</a></h5>
                             <p class="card-text text-center">$49.99</p>
                             <div class="d-grid gap-2">
                                 <a href="#" class="btn theme-green-btn btn-sm text-light">Add to Cart</a>
@@ -174,6 +177,81 @@
                             <h5 class="card-title text-center"><a href="#"
                                     class="text-decoration-none text-dark">Digital Camera</a></h5>
                             <p class="card-text text-center">$249.99</p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn theme-green-btn btn-sm text-light">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Popular Categories --}}
+    <section class="py-5">
+        <div class="container">
+
+            <div class="d-flex">
+                <div class="flex-grow-1">
+                    <h1>Popular Categories</h1>
+                </div>
+                <div><a href="#" class="btn theme-orange-btn btn-sm text-light">View All</a></div>
+            </div>
+            <div class="row theme-product">
+                <div class="col-lg-3">
+                    <div class="card">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/products/9.jpg') }}" class="card-img-top" alt="Product 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a href="#"
+                                    class="text-decoration-none text-dark">Ladies Bag</a></h5>
+                            <p class="card-text text-center">$249.99</p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn theme-green-btn btn-sm text-light">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/products/10.jpg') }}" class="card-img-top" alt="Product 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a href="#"
+                                    class="text-decoration-none text-dark">Travel Bag</a></h5>
+                            <p class="card-text text-center">$549.99</p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn theme-green-btn btn-sm text-light">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/products/7.jpg') }}" class="card-img-top" alt="Product 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a href="#"
+                                    class="text-decoration-none text-dark">LED TV</a></h5>
+                            <p class="card-text text-center">$559.99</p>
+                            <div class="d-grid gap-2">
+                                <a href="#" class="btn theme-green-btn btn-sm text-light">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <a href="#">
+                            <img src="{{ asset('assets/images/products/2.jpg') }}" class="card-img-top" alt="Product 1">
+                        </a>
+                        <div class="card-body">
+                            <h5 class="card-title text-center"><a href="#"
+                                    class="text-decoration-none text-dark">Men's Watch</a></h5>
+                            <p class="card-text text-center">$1149.99</p>
                             <div class="d-grid gap-2">
                                 <a href="#" class="btn theme-green-btn btn-sm text-light">Add to Cart</a>
                             </div>

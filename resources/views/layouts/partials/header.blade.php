@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home Page</title>
+    @stack('title')
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
@@ -50,22 +50,22 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="#">Mobile</a>
+                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'mobile', 'id' => 1]) }}">Mobile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="#">Fashion</a>
+                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'fashion', 'id' => 2]) }}">Fashion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="#">Electronics</a>
+                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'electronics', 'id' => 3]) }}">Electronics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="#">Furniture</a>
+                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'furniture', 'id' => 4]) }}">Furniture</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="#">Grocery</a>
+                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'grocery', 'id' => 5]) }}">Grocery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="#">Appliances</a>
+                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'appliances', 'id' => 6]) }}">Appliances</a>
                     </li>
                 </ul>
             </div>
