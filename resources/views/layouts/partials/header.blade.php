@@ -50,22 +50,22 @@
             <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                 <ul class="nav">
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'mobile', 'id' => 1]) }}">Mobile</a>
+                        <a class="nav-link active text-dark" href="{{ url('category/mobile') }}">Mobile</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'fashion', 'id' => 2]) }}">Fashion</a>
+                        <a class="nav-link active text-dark" href="{{ url('category/fashion') }}">Fashion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'electronics', 'id' => 3]) }}">Electronics</a>
+                        <a class="nav-link active text-dark" href="{{ url('category/electronics') }}">Electronics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'furniture', 'id' => 4]) }}">Furniture</a>
+                        <a class="nav-link active text-dark" href="{{ url('category/furniture') }}">Furniture</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'grocery', 'id' => 5]) }}">Grocery</a>
+                        <a class="nav-link active text-dark" href="{{ url('category/grocery') }}">Grocery</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-dark" href="{{ route('category', ['slug' => 'appliances', 'id' => 6]) }}">Appliances</a>
+                        <a class="nav-link active text-dark" href="{{ url('category/electronics/tv') }}">Appliances</a>
                     </li>
                 </ul>
             </div>

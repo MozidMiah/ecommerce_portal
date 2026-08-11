@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class CategoryController extends Controller
+class SubcategoryController extends Controller
 {
     public function index($slug){
-        return view('category.index', compact('slug'));
+        return view('subcategory.index', compact('slug'));
     }
 }
