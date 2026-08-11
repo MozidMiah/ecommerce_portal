@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg theme-navbar">
         <div class="container">
-            <a class="navbar-brand text-light" href="#">e-Commerce</a>
+            <a class="navbar-brand text-light" href="{{ url('/') }}"><img src="{{ asset('assets/images/logo/logo.png') }}" style="width: 200px;" alt="Logo"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
                 aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
