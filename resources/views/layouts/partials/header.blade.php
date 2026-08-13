@@ -34,9 +34,9 @@
             </div>
             <div>
                 <a href="#" class="text-decoration-none text-light">Become a Seller</a>
-                <a href="#" class="btn theme-green-btn btn-sm text-light"><i
+                <a href="#" class="btn theme-green-btn btn-sm text-light rounded-pill"><i
                         class="fa-solid fa-cart-shopping"></i></a>
-                <a href="#" class="btn theme-orange-btn btn-sm text-light"><i
+                <a href="#" class="btn theme-orange-btn btn-sm text-light rounded-pill"><i
                         class="fa-solid fa-user-lock"></i></a>
             </div>
         </div>

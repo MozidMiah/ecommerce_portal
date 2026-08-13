@@ -44,7 +44,7 @@
                 <div class="flex-grow-1">
                     <h1>Top Deals</h1>
                 </div>
-                <div><a href="#" class="btn theme-green-btn btn-sm text-light">View All</a></div>
+                <div><a href="#" class="btn theme-orange-btn btn-sm text-light rounded-pill">View All</a></div>
             </div>
             <div class="row theme-product">
                 <div class="col-lg-3">
@@ -119,7 +119,7 @@
                 <div class="flex-grow-1">
                     <h1>Best of Electronics</h1>
                 </div>
-                <div><a href="#" class="btn theme-green-btn btn-sm text-light">View All</a></div>
+                <div><a href="#" class="btn theme-orange-btn btn-sm text-light rounded-pill">View All</a></div>
             </div>
             <div class="row theme-product">
                 <div class="col-lg-3">
@@ -195,7 +195,7 @@
                 <div class="flex-grow-1">
                     <h1>Popular Categories</h1>
                 </div>
-                <div><a href="#" class="btn theme-orange-btn btn-sm text-light">View All</a></div>
+                <div><a href="#" class="btn theme-orange-btn btn-sm text-light rounded-pill">View All</a></div>
             </div>
             <div class="row theme-product">
                 <div class="col-lg-3">
@@ -270,7 +270,7 @@
                 <div class="flex-grow-1">
                     <h1>Recently Viewed</h1>
                 </div>
-                <div><a href="#" class="btn theme-orange-btn btn-sm text-light">View All</a></div>
+                <div><a href="#" class="btn theme-orange-btn btn-sm text-light rounded-pill">View All</a></div>
             </div>
             <div class="row theme-product">
                 <div class="col-lg-3">
