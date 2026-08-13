@@ -96,12 +96,96 @@
                         </tbody>
                     </table>
                 </div>
+                {{-- Related Products --}}
+                <section class="py-5">
+                    <div class="container">
+                        <div class="d-flex">
+                            <div class="flex-grow-1">
+                                <h1>Related Products</h1>
+                            </div>
+                            <div><a href="#" class="btn theme-orange-btn btn-sm text-light">View All</a></div>
+                        </div>
+                        <div class="row theme-product">
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="{{ asset('assets/images/products/5.jpg') }}" class="card-img-top"
+                                            alt="Product 1">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="#"
+                                                class="text-decoration-none text-dark">Wooden Chair</a></h5>
+                                        <p class="card-text text-center">$249.99</p>
+                                        <div class="d-grid gap-2">
+                                            <a href="#" class="btn theme-green-btn btn-sm text-light">Add to
+                                                Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="{{ asset('assets/images/products/6.jpg') }}" class="card-img-top"
+                                            alt="Product 1">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="#"
+                                                class="text-decoration-none text-dark">Digital Camera</a></h5>
+                                        <p class="card-text text-center">$549.99</p>
+                                        <div class="d-grid gap-2">
+                                            <a href="#" class="btn theme-green-btn btn-sm text-light">Add to
+                                                Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="{{ asset('assets/images/products/7.jpg') }}" class="card-img-top"
+                                            alt="Product 1">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="#"
+                                                class="text-decoration-none text-dark">LED TV</a></h5>
+                                        <p class="card-text text-center">$559.99</p>
+                                        <div class="d-grid gap-2">
+                                            <a href="#" class="btn theme-green-btn btn-sm text-light">Add to
+                                                Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="card">
+                                    <a href="#">
+                                        <img src="{{ asset('assets/images/products/8.jpg') }}" class="card-img-top"
+                                            alt="Product 1">
+                                    </a>
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center"><a href="#"
+                                                class="text-decoration-none text-dark">Washing Machine</a></h5>
+                                        <p class="card-text text-center">$1149.99</p>
+                                        <div class="d-grid gap-2">
+                                            <a href="#" class="btn theme-green-btn btn-sm text-light">Add to
+                                                Cart</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <hr>
+            <div class="row">
+                <!-- Customer Reviews -->
                 <div class="col-lg-12 mt-4">
                     <h3>Customer Reviews</h3>
                     <div class="row g-3">
-
                         <!-- Review 1 -->
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <div class="border rounded p-2 d-flex align-items-center" style="height: 90px;">
                                 <img src="https://i.pravatar.cc/50?img=12" class="rounded-circle me-2" width="45"
                                     height="45" alt="John Doe">
@@ -118,9 +202,8 @@
                                 </div>
                             </div>
                         </div>
-
                         <!-- Review 2 -->
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                             <div class="border rounded p-2 d-flex align-items-center" style="height: 90px;">
                                 <img src="https://i.pravatar.cc/50?img=47" class="rounded-circle me-2" width="45"
                                     height="45" alt="Jane Smith">
@@ -138,122 +221,66 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mt-4">
-                        <h5>Write a Review</h5>
-                        <form>
-                            <div class="mb-3">
-                                <label for="reviewerName" class="form-label">Your Name</label>
-                                <input type="text" class="form-control" id="reviewerName" placeholder="Enter your name">
-                            </div>
-                            <div class="mb-3">
-                                <label for="reviewText" class="form-label">Your Review</label>
-                                <textarea class="form-control" id="reviewText" rows="3" placeholder="Write your review here"></textarea>
-                            </div>
-                            <div class="mb-3">
-                                <label for="reviewRating" class="form-label">Rating</label>
-                                <select id="reviewRating" class="form-select w-auto d-inline-block rounded-pill">
-                                    <option value="">Select Rating</option>
-                                    <option value="1">1 Star</option>
-                                    <option value="2">2 Stars</option>
-                                    <option value="3">3 Stars</option>
-                                    <option value="4">4 Stars</option>
-                                    <option value="5">5 Stars</option>
-                                </select>
-                            </div>
-                            <button type="submit" class="btn theme-green-btn text-light rounded-pill">Submit
-                                Review</button>
-                        </form>
+                </div>
+            </div>
+
+        <!-- Add Your Review -->
+        <div class="col-lg-12 mt-4">
+            <h3>Add Your Review</h3>
+            <form>
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" class="form-control form-control-lg" placeholder="Enter your Name">
                     </div>
-                    <div class="mt-4">
-                        <h5>Related Products</h5>
-                        <div class="row g-3">
-                            <div class="col-md-3">
-                                <div class="card theme-product">
-                                    <img src="{{ asset('assets/images/products/2.jpg') }}" class="card-img-top"
-                                        alt="Product 2">
-                                    <div class="card-body">
-                                        <h6 class="card-title">Product 2</h6>
-                                        <p class="card-text">$29.99</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card theme-product">
-                                    <img src="{{ asset('assets/images/products/3.jpg') }}" class="card-img-top"
-                                        alt="Product 3">
-                                    <div class="card-body">
-                                        <h6 class="card-title">Product 3</h6>
-                                        <p class="card-text">$39.99</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card theme-product">
-                                    <img src="{{ asset('assets/images/products/4.jpg') }}" class="card-img-top"
-                                        alt="Product 4">
-                                    <div class="card-body">
-                                        <h6 class="card-title">Product 4</h6>
-                                        <p class="card-text">$19.99</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-3">
-                                <div class="card theme-product">
-                                    <img src="{{ asset('assets/images/products/5.jpg') }}" class="card-img-top"
-                                        alt="Product 5">
-                                    <div class="card-body">
-                                        <h6 class="card-title">Product 5</h6>
-                                        <p class="card-text">$59.99</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-md-6">
+                        <input type="email" class="form-control form-control-lg" placeholder="Enter your Email">
                     </div>
-                    <div class="mt-4">
-                        <h5>Frequently Asked Questions</h5>
-                        <div class="accordion" id="faqAccordion">
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="faqHeadingOne">
-                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faqCollapseOne" aria-expanded="true"
-                                        aria-controls="faqCollapseOne">
-                                        What is the return policy?
-                                    </button>
-                                </h2>
-                                <div id="faqCollapseOne" class="accordion-collapse collapse show"
-                                    aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        You can return the product within 30 days of purchase for a full refund.
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="faqHeadingTwo">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                        data-bs-target="#faqCollapseTwo" aria-expanded="false"
-                                        aria-controls="faqCollapseTwo">
-                                        How long does shipping take?
-                                    </button>
-                                </h2>
-                                <div id="faqCollapseTwo" class="accordion-collapse collapse"
-                                    aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
-                                    <div class="accordion-body">
-                                        Shipping typically takes 5-7 business days, depending on your location.
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="col-12">
+                        <textarea class="form-control form-control-lg" rows="4" placeholder="Write your review"></textarea>
                     </div>
-                    <div class="mt-4">
-                        <h5>Share This Product</h5>
-                        <div>
-                            <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#" class="btn btn-outline-info me-2"><i class="fab fa-twitter"></i></a>
-                            <a href="#" class="btn btn-outline-danger me-2"><i class="fab fa-pinterest"></i></a>
-                            <a href="#" class="btn btn-outline-success"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </form>
+        </div>
+        <div class="mt-4">
+            <h5>Frequently Asked Questions</h5>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeadingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapseOne" aria-expanded="true" aria-controls="faqCollapseOne">
+                            What is the return policy?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseOne" class="accordion-collapse collapse show" aria-labelledby="faqHeadingOne"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            You can return the product within 30 days of purchase for a full refund.
                         </div>
                     </div>
                 </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeadingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#faqCollapseTwo" aria-expanded="false" aria-controls="faqCollapseTwo">
+                            How long does shipping take?
+                        </button>
+                    </h2>
+                    <div id="faqCollapseTwo" class="accordion-collapse collapse" aria-labelledby="faqHeadingTwo"
+                        data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Shipping typically takes 5-7 business days, depending on your location.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mt-4">
+            <h5>Share This Product</h5>
+            <div>
+                <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="btn btn-outline-info me-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="btn btn-outline-danger me-2"><i class="fab fa-pinterest"></i></a>
+                <a href="#" class="btn btn-outline-success"><i class="fab fa-whatsapp"></i></a>
             </div>
         </div>
     </section>
