@@ -3,33 +3,255 @@
     <title>Product Detail</title>
 @endpush
 @section('content')
-    <div class="container-fluid bg-light p-5">
-        <h1 class="text-center"><i class="fa-solid fa-layer-group"></i>Product Detail</h1>
+    <div class="container-fluid bg-light p-2">
+        <h1 class="text-center"><i class="fa-solid fa-layer-group"></i>Product Details</h1>
     </div>
-
-    <section class="my-5">
+    <section class="my-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-4">
-                    <img src="{{ asset('assets/images/products/1.jpg') }}" class="rounded img-thumbnail" alt="Product Image">
+                    <img src="{{ asset('assets/images/products/1.jpg') }}" class="rounded img-fluid" alt="Product Image">
                 </div>
                 <div class="col-lg-8">
-                    <div class="card">
-                        <ul class="nav flex-column">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Active</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Link</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                            </li>
-                        </ul>
+                    <div>
+                        <h2>Cade's shoes</h2>
+                        <h5 class="text-muted">$49.99</h5>
+                        <div>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            <h6>2 Customer Reviews</h6>
+                        </div>
+                        <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut
+                            laoreet
+                            tincidunt.</p>
+                        <div class="mt-3">
+                            <label for="size">Size:</label>
+                            <select id="size" class="form-select w-auto d-inline-block rounded-pill">
+                                <option value="">Select Size</option>
+                                <option value="small">Small</option>
+                                <option value="medium">Medium</option>
+                                <option value="large">Large</option>
+                            </select>
+                        </div>
+                        <div class="mt-3">
+                            <label for="color">Color:</label>
+                            <select id="color" class="form-select w-auto d-inline-block rounded-pill">
+                                <option value="">Select Color</option>
+                                <option value="red">Red</option>
+                                <option value="blue">Blue</option>
+                                <option value="green">Green</option>
+                            </select>
+                        </div>
+                        <div class="mt-3">
+                            <label for="quantity">Quantity:</label>
+                            <input type="number" id="quantity" class="form-control w-auto d-inline-block" value="1"
+                                min="1">
+                        </div>
+                        <div class="mt-3">
+                            <button class="btn theme-green-btn text-light rounded-pill me-1">Add to Cart</button>
+                            {{-- <button class="btn btn-outline-secondary">Add to Wishlist</button> --}}
+                            <button class="btn theme-orange-btn text-light rounded-pill">Buy Now</button>
+                        </div>
 
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-12">
+                    <h3>Product Description</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt,
+                        nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam
+                        nisl nunc vel nisl.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut laoreet tincidunt,
+                        nunc nisl aliquam nunc, eget aliquam nisl nunc vel nisl. Lorem ipsum dolor sit amet, consectetur
+                        adipiscing elit. Sed euismod, nunc ut laoreet tincidunt, nunc nisl aliquam nunc, eget aliquam
+                        nisl nunc vel nisl.
+                    </p>
+                </div>
+                <div class="col-lg-9 mt-4">
+                    <h3>Product Specifications</h3>
+                    <table class="table table-bordered">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Material</th>
+                                <td>Leather</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Color</th>
+                                <td>Black</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Size</th>
+                                <td>Available in Small, Medium, Large</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Weight</th>
+                                <td>1.2 kg</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-lg-12 mt-4">
+                    <h3>Customer Reviews</h3>
+                    <div class="row g-3">
+
+                        <!-- Review 1 -->
+                        <div class="col-md-5">
+                            <div class="border rounded p-2 d-flex align-items-center" style="height: 90px;">
+                                <img src="https://i.pravatar.cc/50?img=12" class="rounded-circle me-2" width="45"
+                                    height="45" alt="John Doe">
+                                <div>
+                                    <h6 class="mb-0">John Doe</h6>
+                                    <div class="small">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <small>Great product! Highly recommend.</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Review 2 -->
+                        <div class="col-md-5">
+                            <div class="border rounded p-2 d-flex align-items-center" style="height: 90px;">
+                                <img src="https://i.pravatar.cc/50?img=47" class="rounded-circle me-2" width="45"
+                                    height="45" alt="Jane Smith">
+                                <div>
+                                    <h6 class="mb-0">Jane Smith</h6>
+                                    <div class="small">
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star checked"></span>
+                                        <span class="fa fa-star"></span>
+                                    </div>
+                                    <small>Good quality, but a bit expensive.</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Write a Review</h5>
+                        <form>
+                            <div class="mb-3">
+                                <label for="reviewerName" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="reviewerName" placeholder="Enter your name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="reviewText" class="form-label">Your Review</label>
+                                <textarea class="form-control" id="reviewText" rows="3" placeholder="Write your review here"></textarea>
+                            </div>
+                            <div class="mb-3">
+                                <label for="reviewRating" class="form-label">Rating</label>
+                                <select id="reviewRating" class="form-select w-auto d-inline-block rounded-pill">
+                                    <option value="">Select Rating</option>
+                                    <option value="1">1 Star</option>
+                                    <option value="2">2 Stars</option>
+                                    <option value="3">3 Stars</option>
+                                    <option value="4">4 Stars</option>
+                                    <option value="5">5 Stars</option>
+                                </select>
+                            </div>
+                            <button type="submit" class="btn theme-green-btn text-light rounded-pill">Submit
+                                Review</button>
+                        </form>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Related Products</h5>
+                        <div class="row g-3">
+                            <div class="col-md-3">
+                                <div class="card theme-product">
+                                    <img src="{{ asset('assets/images/products/2.jpg') }}" class="card-img-top"
+                                        alt="Product 2">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Product 2</h6>
+                                        <p class="card-text">$29.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card theme-product">
+                                    <img src="{{ asset('assets/images/products/3.jpg') }}" class="card-img-top"
+                                        alt="Product 3">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Product 3</h6>
+                                        <p class="card-text">$39.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card theme-product">
+                                    <img src="{{ asset('assets/images/products/4.jpg') }}" class="card-img-top"
+                                        alt="Product 4">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Product 4</h6>
+                                        <p class="card-text">$19.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card theme-product">
+                                    <img src="{{ asset('assets/images/products/5.jpg') }}" class="card-img-top"
+                                        alt="Product 5">
+                                    <div class="card-body">
+                                        <h6 class="card-title">Product 5</h6>
+                                        <p class="card-text">$59.99</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Frequently Asked Questions</h5>
+                        <div class="accordion" id="faqAccordion">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqHeadingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqCollapseOne" aria-expanded="true"
+                                        aria-controls="faqCollapseOne">
+                                        What is the return policy?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="faqHeadingOne" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        You can return the product within 30 days of purchase for a full refund.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="faqHeadingTwo">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#faqCollapseTwo" aria-expanded="false"
+                                        aria-controls="faqCollapseTwo">
+                                        How long does shipping take?
+                                    </button>
+                                </h2>
+                                <div id="faqCollapseTwo" class="accordion-collapse collapse"
+                                    aria-labelledby="faqHeadingTwo" data-bs-parent="#faqAccordion">
+                                    <div class="accordion-body">
+                                        Shipping typically takes 5-7 business days, depending on your location.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <h5>Share This Product</h5>
+                        <div>
+                            <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="btn btn-outline-info me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-outline-danger me-2"><i class="fab fa-pinterest"></i></a>
+                            <a href="#" class="btn btn-outline-success"><i class="fab fa-whatsapp"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
