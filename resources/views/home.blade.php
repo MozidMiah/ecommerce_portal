@@ -56,7 +56,7 @@
                             <h5 class="card-title text-center"><a href="#" class="text-decoration-none text-dark">Case shoe</a></h5>
                             <p class="card-text text-center">$49.99</p>
                             <div class="d-grid gap-2">
-                                <a href="#" class="btn theme-green-btn btn-sm text-light">Add to Cart</a>
+                                <a href="{{ url('cart-list/{slug}') }}" class="btn theme-green-btn btn-sm text-light">Add to Cart</a>
                             </div>
                         </div>
                     </div>
