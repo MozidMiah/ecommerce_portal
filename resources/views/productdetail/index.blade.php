@@ -53,8 +53,8 @@
                         </div>
                         <div class="mt-3">
                             <label for="quantity">Quantity:</label>
-                            <input type="number" id="quantity" class="form-control w-auto d-inline-block" value="1"
-                                min="1">
+                            <input type="number" id="quantity" class="form-control d-inline-block" value="1"
+                                min="1" style="width: 60px;">
                         </div>
                         <div class="mt-3">
                             <button class="btn theme-green-btn text-light rounded-pill me-1">Add to Cart</button>
@@ -109,7 +109,8 @@
                             <div class="flex-grow-1">
                                 <h1>Related Products</h1>
                             </div>
-                            <div><a href="#" class="btn theme-orange-btn btn-sm text-light rounded-pill">View All</a></div>
+                            <div><a href="#" class="btn theme-orange-btn btn-sm text-light rounded-pill">View All</a>
+                            </div>
                         </div>
                         <div class="row theme-product">
                             <div class="col-lg-3">
