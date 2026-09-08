@@ -301,5 +301,6 @@
                     <a href="#" class="btn btn-outline-success"><i class="fab fa-whatsapp"></i></a>
                 </div>
             </div>
+        </div>
     </section>
 @endsection

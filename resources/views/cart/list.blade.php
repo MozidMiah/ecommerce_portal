@@ -111,7 +111,7 @@
                         <h5 class="ms-auto">$1,399.94</h5>
                     </div>
                     <div class="d-grid gap-2 my-3">
-                        <a href="{{ url('checkout') }}" class="btn theme-orange-btn btn-sm text-light">Checkout</a>
+                        <a href="{{ url('checkout/product') }}" class="btn theme-orange-btn btn-sm text-light">Proceed to Checkout</a>
                     </div>
                 </div>
             </div>
