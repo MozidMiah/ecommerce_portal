@@ -60,4 +60,105 @@
             </form>
         </div>
     </section>
+    {{-- Your Order --}}
+    <section>
+        <div class="container my-5">
+            <h3>Your Orders</h3>
+            <div class="row mb-5">
+                <div class="col-lg-12">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">
+                                    <h5>Product</h5>
+                                </th>
+                                <th scope="col">
+                                    <h5>Price</h5>
+                                </th>
+                                <th scope="col">
+                                    <h5>Quantity</h5>
+                                </th>
+                                <th scope="col">
+                                    <h5>Total</h5>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>
+                                    <div class="d-flex align-items-center">
+                                        <img src="{{ asset('assets/images/products/1.jpg') }}" alt="Product Image"
+                                            class="img-fluid rounded-3" style="width: 70px;">
+                                        <div class="p-3">
+                                            <h5>Case shoe</h5>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>$49.99</td>
+                                <td>01</td>
+                                <td>$99.98</td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="d-flex">
+                                        <img src="{{ asset('assets/images/products/2.jpg') }}" alt="Product Image"
+                                            class="img-fluid rounded-3" style="width: 70px;">
+                                        <div class="p-3">
+                                            <h5>Men's Watch</h5>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>$549.99</td>
+                                <td>01</td>
+                                <td>$1,099.98</td>
+                            </tr>
+                            <tr>
+                                <th>
+                                    <div class="d-flex">
+                                        <img src="{{ asset('assets/images/products/3.jpg') }}" alt="Product Image"
+                                            class="img-fluid rounded-3" style="width: 70px;">
+                                        <div class="p-3">
+                                            <h5>Hat</h5>
+                                        </div>
+                                    </div>
+                                </th>
+                                <td>$149.99</td>
+                                <td>01</td>
+                                <td>$299.98</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {{-- Payment Method --}}
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" checked>
+                        <label class="form-check-label" for="radioDefault1">
+                            UPI Payment
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                        <label class="form-check-label" for="radioDefault2">
+                            Cash on Delivery
+                        </label>
+                    </div>
+
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
+                        <label class="form-check-label" for="radioDefault2">
+                            Credit/Debit Card
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
