@@ -79,7 +79,7 @@
                                     <h5>Quantity</h5>
                                 </th>
                                 <th scope="col">
-                                    <h5>Total</h5>
+                                    <h5>Sub Total</h5>
                                 </th>
                             </tr>
                         </thead>
@@ -126,6 +126,11 @@
                                 <td>01</td>
                                 <td>$299.98</td>
                             </tr>
+
+                            <tr>
+                                <th colspan="3"><h4>Total</h4></th>
+                                <th><h4>$749.97</h4></th>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
@@ -141,22 +146,26 @@
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault1" checked>
                         <label class="form-check-label" for="radioDefault1">
-                            UPI Payment
+                            <h5>UPI Payment</h5>
                         </label>
                     </div>
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
                         <label class="form-check-label" for="radioDefault2">
-                            Cash on Delivery
+                            <h5>Cash on Delivery</h5>
                         </label>
                     </div>
 
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="radioDefault" id="radioDefault2">
                         <label class="form-check-label" for="radioDefault2">
-                            Credit/Debit Card
+                            <h5>Credit/Debit Card</h5>
                         </label>
                     </div>
+                    <div class="col-12">
+                        <a class="btn theme-orange-btn text-light rounded-pill my-4">Submit Order</a>
+                    </div>
+
                 </div>
             </div>
         </div>

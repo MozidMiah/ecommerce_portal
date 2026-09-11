@@ -18,7 +18,7 @@
                                 <th scope="col"><h4>Product</h4></th>
                                 <th scope="col"><h4>Price</h4></th>
                                 <th scope="col"><h4>Quantity</h4></th>
-                                <th scope="col"><h4>Total</h4></th>
+                                <th scope="col"><h4>Sub Total</h4></th>
                                 <th scope="col"><h4>Remove</h4></th>
                             </tr>
                         </thead>
